@@ -32,11 +32,11 @@ export const About = () => {
         <Grid container md={12}>
           <Grid item md={12}>
             <Typography variant="h5">
-              Lived in a Vault-Tec vault all your life? Ready to step outside
-              and get some fresh Appalachian air? There’s so much to see and do
-              in Fallout 76, and a newcomer might not know where to begin.
-              spacer Dont panic. We’ve got all the tools you need to succeed in
-              our comprehen{' '}
+              My name is Micaela, a Frontend Developer with experience in web
+              application development, APIs, and web design. My focus on quality
+              is reflected in the attention I pay to detail, creativity, and
+              user-centered design. I always strive to deliver final products
+              that are both aesthetically pleasing and functional.
             </Typography>
           </Grid>
         </Grid>
@@ -82,6 +82,7 @@ export const About = () => {
                   key={image.id}
                   item
                   sx={{
+                    m: '20px',
                     mr: '20px',
                     transition: 'transform 0.3s',
                     '&:hover': {
@@ -127,7 +128,7 @@ export const About = () => {
                   key={image.id}
                   item
                   sx={{
-                    mr: '20px',
+                    m: '20px',
                     transition: 'transform 0.3s',
                     '&:hover': {
                       transform: 'scale(1.2)',

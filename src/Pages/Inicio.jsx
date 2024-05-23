@@ -9,7 +9,7 @@ export const Inicio = () => {
         alignItems: { xs: 'center', lg: 'center' },
       }}
     >
-      <Grid container spacing={3} pt={10}>
+      <Grid container spacing={3} sx={{ paddingTop: { xs: 2, md: 10 } }}>
         <Grid item xs={12}>
           <Typography
             variant="h1"
@@ -31,6 +31,7 @@ export const Inicio = () => {
             sx={{
               mr: { xs: 0, md: 35 },
               textAlign: { xs: 'center', md: 'right', lg: 'right' },
+              fontSize: { xs: 20 },
             }}
           >
             2024
@@ -41,7 +42,7 @@ export const Inicio = () => {
           <Typography
             variant="h6"
             color="textPrimary"
-            fontSize={{ xs: 14, md: 24 }}
+            fontSize={{ xs: 18, md: 24 }}
             fontFamily="Shadows Into Light"
             textAlign={{ xs: 'center', md: 'left' }}
             mt={{ xs: 2, md: 10 }}
@@ -54,9 +55,9 @@ export const Inicio = () => {
             variant="h6"
             color="textPrimary"
             fontFamily="Shadows Into Light"
-            fontSize={{ xs: 14, md: 24 }}
+            fontSize={{ xs: 18, md: 24 }}
             textAlign={{ xs: 'center', md: 'right' }}
-            mt={{ xs: 2, md: 10 }}
+            mt={{ xs: 0, md: 10 }}
           >
             Micaela Cabrera
           </Typography>

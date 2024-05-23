@@ -9,7 +9,7 @@ export const About = () => {
     <>
       <Container
         sx={{
-          height: '50vh',
+          height: '40vh',
           display: 'flex',
           alignItems: 'center',
         }}
@@ -31,7 +31,7 @@ export const About = () => {
       <Container>
         <Grid container md={12}>
           <Grid item md={10}>
-            <Typography variant="h5">
+            <Typography variant="body2" fontSize={20} textAlign={'right'}>
               My name is Micaela, a Frontend Developer with experience in web
               application development, APIs, and web design. My focus on quality
               is reflected in the attention I pay to detail, creativity, and
@@ -44,7 +44,7 @@ export const About = () => {
 
       <Container
         sx={{
-          height: '50vh',
+          height: '40vh',
           display: 'flex',
           alignItems: 'center',
         }}
@@ -69,7 +69,7 @@ export const About = () => {
             <Accordion>
               <AccordionSummary
                 sx={{ bgcolor: '#004d53' }}
-                expandIcon={<ArrowDownwardIcon />}
+                expandIcon={<ArrowDownwardIcon sx={{ color: 'white' }} />}
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
@@ -116,7 +116,7 @@ export const About = () => {
             <Accordion sx={{ width: '100%' }}>
               <AccordionSummary
                 sx={{ bgcolor: '#004d53' }}
-                expandIcon={<ArrowDownwardIcon />}
+                expandIcon={<ArrowDownwardIcon sx={{ color: 'white' }} />}
                 aria-controls="panel1-content"
                 id="panel1-header"
               >

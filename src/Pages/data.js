@@ -2,8 +2,8 @@ import image1 from '../image/projects/crud.png'
 import image2 from '../image/projects/jobs.png'
 import image3 from '../image/projects/todolist.png'
 import image4 from '../image/projects/gb.png'
-import image5 from '../image/projects/iluvalorant.png'
-import image6 from '../image/projects/memesq.png'
+import image5 from '../image/projects/memesq.png'
+import image6 from '../image/projects/iluvalorant.png'
 import image7 from '../image/projects/lfds.png'
 import image8 from '../image/projects/pompeya.png'
 
@@ -73,18 +73,20 @@ export const imageData = [
   },
   {
     image: image5,
+    description: 'Divertite creando memes para mandarle a tus amiguis',
+    icons: [js, css],
+    link: ['https://micacabrera.github.io/creandomemes/'],
+  },
+
+  {
+    image: image6,
     description: 'Ilustración hecha con Ilustrator para canal de Twich.',
     icons: [ai],
     link: [
       'https://www.behance.net/gallery/199069099/Ilustracion-estilo-Valorant',
     ],
   },
-  {
-    image: image6,
-    description: 'Divertite creando memes para mandarle a tus amiguis',
-    icons: [js, css],
-    link: ['https://micacabrera.github.io/creandomemes/'],
-  },
+
   {
     image: image7,
     description: 'Diseño de marca para floristería y organización de eventos.',

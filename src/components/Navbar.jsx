@@ -23,8 +23,10 @@ export const Navbar = () => {
       <Tabs
         value={value}
         onChange={handleChange}
-        textColor="secondary"
-        indicatorColor="secondary"
+        sx={{
+          indicator: { backgroundColor: '#004d53' },
+          textColor: { backgroundColor: '#004d53' },
+        }}
         aria-label="secondary tabs"
       >
         <Tab component={Link} to="/" value="one" label="home" />

@@ -5,47 +5,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
-    background-repeat: no-repeat;
-    background-size:10%;
-    background-position:center;  
- 
+  background-color: #e5e5e5; 
    } 
 
-.switch {
-  width: 30px;
-  height: 15px;
-  margin-top: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
-  display: flex;
-  justify-content: flex-start;
-  border-radius: 50px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.switch[data-isOn='true'] {
-  justify-content: flex-end;
-}
-
-.handle {
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  border-radius: 40px;
-}
-
-.div {
-  width: 100px;
-  height: 100px;
-  background-image: url('./image/flor1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.img-cv {
-  width: 200px;
-  height: 200px;
-}
 

@@ -4,18 +4,18 @@ export const Inicio = () => {
   return (
     <Container
       sx={{
-        height: '100vh',
+        height: '80vh',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: { xs: 'center', lg: 'center' },
       }}
     >
-      <Grid container spacing={3} justifyContent="center" alignItems="center">
+      <Grid container spacing={3} pt={10}>
         <Grid item xs={12}>
           <Typography
             variant="h1"
-            color="black"
+            color="textPrimary"
             fontFamily="Shadows Into Light"
-            fontSize={{ xs: 60, md: 175 }}
+            fontSize={{ xs: 50, md: 100 }}
             fontWeight={700}
             textAlign="center"
           >
@@ -23,11 +23,15 @@ export const Inicio = () => {
           </Typography>
           <Typography
             variant="h6"
-            color="black"
+            color="textPrimary"
             fontFamily="Shadows Into Light"
-            fontSize={{ xs: 20, md: 24 }}
+            fontSize={{ xs: 16, md: 24, lg: 25 }}
             textAlign="right"
-            marginRight={15}
+            mt={2}
+            sx={{
+              mr: { xs: 0, md: 35 },
+              textAlign: { xs: 'center', md: 'right', lg: 'right' },
+            }}
           >
             2024
           </Typography>
@@ -36,11 +40,11 @@ export const Inicio = () => {
         <Grid item xs={12} md={6}>
           <Typography
             variant="h6"
-            color=""
-            fontSize={{ xs: 16, md: 30 }}
+            color="textPrimary"
+            fontSize={{ xs: 14, md: 24 }}
             fontFamily="Shadows Into Light"
             textAlign={{ xs: 'center', md: 'left' }}
-            pt={{ xs: 2, md: 10 }}
+            mt={{ xs: 2, md: 10 }}
           >
             (web developer)
           </Typography>
@@ -48,11 +52,11 @@ export const Inicio = () => {
         <Grid item xs={12} md={6}>
           <Typography
             variant="h6"
-            color=""
+            color="textPrimary"
             fontFamily="Shadows Into Light"
+            fontSize={{ xs: 14, md: 24 }}
             textAlign={{ xs: 'center', md: 'right' }}
-            fontSize={{ xs: 16, md: 30 }}
-            pt={{ xs: 2, md: 10 }}
+            mt={{ xs: 2, md: 10 }}
           >
             Micaela Cabrera
           </Typography>

@@ -9,18 +9,20 @@ import { Footer } from './components/Footer'
 function App() {
   return (
     <>
-      <Grid container justifyContent={'center'} alignItems={'center'}>
+      <Grid container justifyContent={'center'}>
         <Grid item md={9}>
           <Navbar />
         </Grid>
-        <Grid container justifyContent={'center'} alignItems={'center'}>
+        <Grid item xs={12}>
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/About" element={<About />} />
             <Route path="/Projects" element={<Projects />} />
           </Routes>
         </Grid>
-        <Footer />
+        <Grid item xs={12}>
+          <Footer />
+        </Grid>
       </Grid>
     </>
   )

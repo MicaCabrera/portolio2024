@@ -1,4 +1,10 @@
-import { Avatar, SpeedDial, SpeedDialAction, Stack } from '@mui/material'
+import {
+  Avatar,
+  SpeedDial,
+  SpeedDialAction,
+  Stack,
+  useMediaQuery,
+} from '@mui/material'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import MailIcon from '@mui/icons-material/Mail'
@@ -24,14 +30,12 @@ const actions = [
 ]
 
 const footerStyles = {
-  marginTop: '100px',
-  padding: '20px',
   position: 'relative',
 }
 
 export const Footer = () => {
   const [open, setOpen] = useState(false)
-
+  const isMobile = useMediaQuery('(max-width:600px)')
   const handleMouseEnter = () => {
     setOpen(true)
   }
@@ -49,7 +53,12 @@ export const Footer = () => {
       <Stack
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        sx={{ position: 'fixed', bottom: 16, right: 16, zIndex: 1000 }}
+        sx={{
+          position: 'fixed',
+          bottom: 16,
+          [isMobile ? 'left' : 'right']: 16,
+          zIndex: 1000,
+        }}
       >
         <SpeedDial
           ariaLabel="SpeedDial openIcon example"
@@ -69,7 +78,7 @@ export const Footer = () => {
               },
             },
           }}
-          icon={<Avatar alt="Logo" src={logo} sx={{ width: 90, height: 90 }} />}
+          icon={<Avatar alt="Logo" src={logo} sx={{ width: 80, height: 80 }} />}
           open={open}
           direction="up"
         >

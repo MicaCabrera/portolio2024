@@ -15,13 +15,13 @@ export const About = () => {
         }}
       >
         <Grid container md={12}>
-          <Grid item md={6} bgcolor={'black'}>
+          <Grid item xs={12} md={6} bgcolor={'black'}>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.7 }}
             >
-              <Typography variant="h1" color="white">
+              <Typography variant="h2" color="white">
                 am*i
               </Typography>
             </motion.div>
@@ -30,7 +30,7 @@ export const About = () => {
       </Container>
       <Container>
         <Grid container md={12}>
-          <Grid item md={12}>
+          <Grid item md={10}>
             <Typography variant="h5">
               My name is Micaela, a Frontend Developer with experience in web
               application development, APIs, and web design. My focus on quality
@@ -50,13 +50,13 @@ export const About = () => {
         }}
       >
         <Grid container md={12}>
-          <Grid item md={6} bgcolor={'black'}>
+          <Grid item xs={12} md={6} bgcolor={'black'}>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.9 }}
             >
-              <Typography variant="h1" color="white">
+              <Typography variant="h2" color="white">
                 stack
               </Typography>
             </motion.div>
@@ -64,96 +64,101 @@ export const About = () => {
         </Grid>
       </Container>
       <Container>
-        <Accordion sx={{ marginBottom: '20px' }}>
-          <AccordionSummary
-            sx={{ bgcolor: '#004d53' }}
-            expandIcon={<ArrowDownwardIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            <Typography variant="h3" color="white">
-              development
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails sx={{ padding: 0 }}>
-            <Grid container sx={{ marginLeft: 0, padding: 2 }}>
-              {imagesTech.map((image) => (
-                <Grid
-                  key={image.id}
-                  item
-                  sx={{
-                    m: '20px',
-                    mr: '20px',
-                    transition: 'transform 0.3s',
-                    '&:hover': {
-                      transform: 'scale(1.2)',
-                    },
-                  }}
-                >
-                  <Paper
-                    elevation={0}
-                    style={{
-                      width: '60px',
-                      height: '60px',
-                      backgroundImage: `url(${image.img})`,
-                      backgroundSize: 'cover',
-                      backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                      transition: 'background-color 0.3s',
-                      '&:hover': {
-                        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                      },
-                    }}
-                  />
+        <Grid container spacing={2} justifyContent="left" pb={10}>
+          <Grid item xs={12} md={10}>
+            <Accordion>
+              <AccordionSummary
+                sx={{ bgcolor: '#004d53' }}
+                expandIcon={<ArrowDownwardIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                <Typography variant="h4" color="white">
+                  development
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ padding: 0 }}>
+                <Grid container sx={{ marginLeft: 0, padding: 2 }}>
+                  {imagesTech.map((image) => (
+                    <Grid
+                      key={image.id}
+                      item
+                      sx={{
+                        m: '20px',
+                        mr: '20px',
+                        transition: 'transform 0.3s',
+                        '&:hover': {
+                          transform: 'scale(1.2)',
+                        },
+                      }}
+                    >
+                      <Paper
+                        elevation={0}
+                        style={{
+                          width: '60px',
+                          height: '60px',
+                          backgroundImage: `url(${image.img})`,
+                          backgroundSize: 'cover',
+                          backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                          transition: 'background-color 0.3s',
+                          '&:hover': {
+                            backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                          },
+                        }}
+                      />
+                    </Grid>
+                  ))}
                 </Grid>
-              ))}
-            </Grid>
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion>
-          <AccordionSummary
-            sx={{ bgcolor: '#004d53' }}
-            expandIcon={<ArrowDownwardIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            <Typography variant="h3" color="white">
-              design
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails sx={{ padding: 0 }}>
-            <Grid container sx={{ marginLeft: 0, padding: 2 }}>
-              {imagesDesign.map((image) => (
-                <Grid
-                  key={image.id}
-                  item
-                  sx={{
-                    m: '20px',
-                    transition: 'transform 0.3s',
-                    '&:hover': {
-                      transform: 'scale(1.2)',
-                    },
-                  }}
-                >
-                  <Paper
-                    elevation={0}
-                    style={{
-                      width: '60px',
-                      height: '60px',
-                      paddingLerft: '0px',
-                      backgroundImage: `url(${image.img})`,
-                      backgroundSize: 'cover',
-                      transition: 'background-color 0.3s',
-                      '&:hover': {
-                        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                      },
-                    }}
-                  />
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+          <Grid item xs={12} md={10}>
+            <Accordion sx={{ width: '100%' }}>
+              <AccordionSummary
+                sx={{ bgcolor: '#004d53' }}
+                expandIcon={<ArrowDownwardIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                <Typography variant="h4" color="white">
+                  design
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ padding: 0 }}>
+                <Grid container sx={{ marginLeft: 0, padding: 2 }}>
+                  {imagesDesign.map((image) => (
+                    <Grid
+                      key={image.id}
+                      item
+                      sx={{
+                        m: '20px',
+                        transition: 'transform 0.3s',
+                        '&:hover': {
+                          transform: 'scale(1.2)',
+                        },
+                      }}
+                    >
+                      <Paper
+                        elevation={0}
+                        style={{
+                          width: '60px',
+                          height: '60px',
+                          paddingLerft: '0px',
+                          backgroundImage: `url(${image.img})`,
+                          backgroundSize: 'cover',
+                          transition: 'background-color 0.3s',
+                          '&:hover': {
+                            backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                          },
+                        }}
+                      />
+                    </Grid>
+                  ))}
                 </Grid>
-              ))}
-            </Grid>
-          </AccordionDetails>
-        </Accordion>
+              </AccordionDetails>
+            </Accordion>
+          </Grid>
+        </Grid>
       </Container>
     </>
   )

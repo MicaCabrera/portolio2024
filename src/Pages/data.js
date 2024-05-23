@@ -49,7 +49,7 @@ export const imageData = [
     description:
       'CRUD diseñado para gestionar proyectos de manera sencilla y eficiente. React y Chakra UI.',
     icons: [react, chakra],
-    link: 'https://micacabrera.github.io/creandomemes/',
+    link: 'https://challengealkemyfront.netlify.app/',
   },
   {
     image: image2,
@@ -75,7 +75,9 @@ export const imageData = [
     image: image5,
     description: 'Ilustración hecha con Ilustrator para canal de Twich.',
     icons: [ai],
-    link: ['https://gb-iota.vercel.app/'],
+    link: [
+      'https://www.behance.net/gallery/199069099/Ilustracion-estilo-Valorant',
+    ],
   },
   {
     image: image6,

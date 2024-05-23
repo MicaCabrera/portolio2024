@@ -85,14 +85,20 @@ export const Projects = () => {
                     transition: 'transform 0.3s',
                     boxSizing: 'border-box',
                     height: '50%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-start',
+                    alignItems: 'center',
                   }}
                 >
-                  <Typography variant="body">{item.description}</Typography>
+                  <Box sx={{ flex: 1 }}>
+                    <Typography variant="body">{item.description}</Typography>
+                  </Box>
                   <Box
                     sx={{
                       display: 'flex',
                       justifyContent: 'space-around',
-                      marginTop: '10px',
+                      alignItems: 'center',
                     }}
                   >
                     {item.icons.map((icon, idx) => (
@@ -100,11 +106,12 @@ export const Projects = () => {
                         key={idx}
                         src={icon}
                         alt={icon}
-                        style={{ width: '40px', height: '40px' }}
+                        style={{ width: '40px', height: '40px', margin: '5px' }}
                       />
                     ))}
                   </Box>
                 </CardContent>
+
                 <Button
                   sx={{
                     position: 'absolute',

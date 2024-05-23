@@ -31,7 +31,12 @@ export const About = () => {
       <Container>
         <Grid container md={12}>
           <Grid item md={10}>
-            <Typography variant="body2" fontSize={20} textAlign={'right'}>
+            <Typography
+              variant="body2"
+              fontSize={20}
+              textAlign={'right'}
+              fontFamily={'Monserrat'}
+            >
               My name is Micaela, a Frontend Developer with experience in web
               application development, APIs, and web design. My focus on quality
               is reflected in the attention I pay to detail, creativity, and
@@ -78,7 +83,14 @@ export const About = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails sx={{ padding: 0 }}>
-                <Grid container sx={{ marginLeft: 0, padding: 2 }}>
+                <Grid
+                  container
+                  sx={{
+                    marginLeft: 0,
+                    padding: 2,
+                    justifyContent: { xs: 'space-around', md: 'left' },
+                  }}
+                >
                   {imagesTech.map((image) => (
                     <Grid
                       key={image.id}
@@ -125,7 +137,14 @@ export const About = () => {
                 </Typography>
               </AccordionSummary>
               <AccordionDetails sx={{ padding: 0 }}>
-                <Grid container sx={{ marginLeft: 0, padding: 2 }}>
+                <Grid
+                  container
+                  sx={{
+                    marginLeft: 0,
+                    padding: 2,
+                    justifyContent: { xs: 'space-around', md: 'left' },
+                  }}
+                >
                   {imagesDesign.map((image) => (
                     <Grid
                       key={image.id}

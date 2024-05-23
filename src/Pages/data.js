@@ -47,7 +47,7 @@ export const imageData = [
   {
     image: image1,
     description:
-      'CRUD diseñado para gestionar proyectos de manera sencilla y eficiente. React y Chakra UI.',
+      'CRUD diseñado para gestionar proyectos de manera sencilla y eficiente. ',
     icons: [react, chakra],
     link: 'https://challengealkemyfront.netlify.app/',
   },

@@ -17,22 +17,15 @@ export const Projects = () => {
 
   return (
     <>
-      <Container sx={{ height: '50vh', display: 'flex', alignItems: 'center' }}>
+      <Container sx={{ height: '40vh', display: 'flex', alignItems: 'center' }}>
         <Grid container>
           <Grid item xs={12} md={6} bgcolor="black">
             <motion.div
-              initial={{ y: 50, opacity: 0 }}
+              initial={{ y: 35, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.7 }}
             >
-              <Typography
-                variant="h1"
-                color="white"
-                sx={{
-                  textAlign: 'left',
-                  fontSize: { xs: '4.5rem', sm: '5rem', md: '5rem' },
-                }}
-              >
+              <Typography variant="h2" color="white">
                 discover*me
               </Typography>
             </motion.div>
@@ -48,7 +41,6 @@ export const Projects = () => {
               <Card
                 sx={{
                   height: { xs: 250, sm: 450, md: 450, lg: 450 },
-
                   border: '8px solid #004D5C',
                   transition: 'transform 0.3s, border-color 0.3s',
                   transform:
@@ -91,7 +83,7 @@ export const Projects = () => {
                     alignItems: 'center',
                   }}
                 >
-                  <Box sx={{ flex: 1 }}>
+                  <Box sx={{ flex: 1, textAlign: 'center' }}>
                     <Typography variant="body">{item.description}</Typography>
                   </Box>
                   <Box

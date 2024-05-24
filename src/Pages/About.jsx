@@ -15,7 +15,7 @@ export const About = () => {
         }}
       >
         <Grid container md={12}>
-          <Grid item xs={12} md={6} bgcolor={'black'}>
+          <Grid item xs={12} md={6} bgcolor={'#02020A'}>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -55,7 +55,7 @@ export const About = () => {
         }}
       >
         <Grid container md={12}>
-          <Grid item xs={12} md={6} bgcolor={'black'}>
+          <Grid item xs={12} md={6} bgcolor={'#02020A'}>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -73,7 +73,7 @@ export const About = () => {
           <Grid item xs={12} md={10}>
             <Accordion>
               <AccordionSummary
-                sx={{ bgcolor: '#004d53' }}
+                sx={{ bgcolor: '#FFA74F' }}
                 expandIcon={<ArrowDownwardIcon sx={{ color: 'white' }} />}
                 aria-controls="panel1-content"
                 id="panel1-header"
@@ -127,7 +127,7 @@ export const About = () => {
           <Grid item xs={12} md={10}>
             <Accordion sx={{ width: '100%' }}>
               <AccordionSummary
-                sx={{ bgcolor: '#004d53' }}
+                sx={{ bgcolor: '#FFA74F' }}
                 expandIcon={<ArrowDownwardIcon sx={{ color: 'white' }} />}
                 aria-controls="panel1-content"
                 id="panel1-header"

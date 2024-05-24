@@ -23,15 +23,40 @@ export const Navbar = () => {
       <Tabs
         value={value}
         onChange={handleChange}
-        style={{
-          indicator: { backgroundColor: '#00FF00' },
-          textColor: { color: '#00FF00' },
-        }}
+        TabIndicatorProps={{ style: { backgroundColor: '#60C8B3' } }}
+        TabProps={{ style: { color: '#60C8B3' } }}
         aria-label="secondary tabs"
       >
-        <Tab component={Link} to="/" value="one" label="home" />
-        <Tab component={Link} to="/About" value="two" label="about" />
-        <Tab component={Link} to="/Projects" value="three" label="projects" />
+        <Tab
+          component={Link}
+          to="/"
+          value="one"
+          label="home"
+          sx={{
+            color: value === 0 ? '#60C8B3' : 'inherit',
+            '&.Mui-selected': { color: '#60C8B3' },
+          }}
+        />
+        <Tab
+          component={Link}
+          to="/About"
+          value="two"
+          label="about"
+          sx={{
+            color: value === 0 ? '#60C8B3' : 'inherit',
+            '&.Mui-selected': { color: '#60C8B3' },
+          }}
+        />
+        <Tab
+          component={Link}
+          to="/Projects"
+          value="three"
+          label="projects"
+          sx={{
+            color: value === 0 ? '#60C8B3' : 'inherit',
+            '&.Mui-selected': { color: '#60C8B3' },
+          }}
+        />
       </Tabs>
     </Container>
   )

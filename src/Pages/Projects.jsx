@@ -111,6 +111,9 @@ export const Projects = () => {
                     right: 10,
                     color: 'white',
                     backgroundColor: 'black',
+                    '&:hover': {
+                      backgroundColor: '#FFA74F',
+                    },
                   }}
                   href={item.link}
                   target="_blank"

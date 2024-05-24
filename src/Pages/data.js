@@ -49,7 +49,7 @@ export const imageData = [
     description:
       'CRUD diseñado para gestionar proyectos de manera sencilla y eficiente. ',
     icons: [react, chakra],
-    link: 'https://challengealkemyfront.netlify.app/',
+    link: 'https://simple-crud-iota.vercel.app/',
   },
   {
     image: image2,

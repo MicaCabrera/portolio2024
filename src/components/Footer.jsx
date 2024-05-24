@@ -74,7 +74,7 @@ export const Footer = () => {
               backgroundColor: 'transparent',
               boxShadow: 'none',
               '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backgroundColor: 'transparent',
               },
             },
           }}
@@ -88,13 +88,6 @@ export const Footer = () => {
               icon={action.icon}
               tooltipTitle={action.name}
               onClick={() => handleActionClick(action.url)}
-              sx={{
-                backgroundColor: 'transparent',
-                boxShadow: 'none',
-                '&:hover': {
-                  backgroundColor: 'transparent',
-                },
-              }}
             />
           ))}
         </SpeedDial>

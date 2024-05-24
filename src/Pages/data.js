@@ -75,7 +75,7 @@ export const imageData = [
     image: image5,
     description: 'Divertite creando memes para mandarle a tus amiguis',
     icons: [js, css],
-    link: ['https://micacabrera.github.io/creandomemes/'],
+    link: ['https://memesgenerador.netlify.app/'],
   },
 
   {

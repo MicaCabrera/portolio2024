@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Grid container justifyContent={'center'}>
-        <Grid item md={9}>
+        <Grid item xs={12} md={9}>
           <Navbar />
         </Grid>
         <Grid item xs={12}>

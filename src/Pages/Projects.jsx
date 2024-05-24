@@ -87,7 +87,7 @@ export const Projects = () => {
                     sx={{
                       flex: 1,
                       textAlign: 'center',
-                      fontSize: { xs: '0.5rem', md: '1rem' },
+                      fontSize: { xs: '0.7rem', md: '1rem' },
                     }}
                   >
                     <Typography variant="body">{item.description}</Typography>

@@ -54,7 +54,7 @@ export const imageData = [
   {
     image: image2,
     description:
-      'Careers es una aplicación web que te permite agregar trabajos nuevos con su descripción y tags, crearlos y mostrarlos en la página Home. También puedes filtrarlos por locación, seniority y categoría, y editarlos si lo deseas.',
+      'Careers es una aplicación web que te permite agregar trabajos nuevos con su descripción y tags, crearlos, mostrarlos, filtrarlos y editarlos si lo deseas.',
     icons: [js, bulma],
     link: ['https://jobs-js.vercel.app/'],
   },

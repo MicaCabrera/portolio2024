@@ -83,9 +83,16 @@ export const Projects = () => {
                     alignItems: 'center',
                   }}
                 >
-                  <Box sx={{ flex: 1, textAlign: 'center' }}>
+                  <Box
+                    sx={{
+                      flex: 1,
+                      textAlign: 'center',
+                      fontSize: { xs: '0.5rem', md: '1rem' },
+                    }}
+                  >
                     <Typography variant="body">{item.description}</Typography>
                   </Box>
+
                   <Box
                     sx={{
                       display: 'flex',

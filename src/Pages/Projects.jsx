@@ -90,7 +90,9 @@ export const Projects = () => {
                       fontSize: { xs: '0.7rem', md: '1rem' },
                     }}
                   >
-                    <Typography variant="body">{item.description}</Typography>
+                    <Typography variant="uppercase">
+                      {item.description}
+                    </Typography>
                   </Box>
 
                   <Box

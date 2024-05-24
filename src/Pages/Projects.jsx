@@ -87,12 +87,11 @@ export const Projects = () => {
                     sx={{
                       flex: 1,
                       textAlign: 'center',
-                      fontSize: { xs: '0.7rem', md: '1rem' },
+                      fontSize: { xs: '0.6rem', md: '1rem' },
+                      textTransform: { xs: 'uppercase', md: 'inherit' },
                     }}
                   >
-                    <Typography variant="uppercase">
-                      {item.description}
-                    </Typography>
+                    <Typography variant="body">{item.description}</Typography>
                   </Box>
 
                   <Box

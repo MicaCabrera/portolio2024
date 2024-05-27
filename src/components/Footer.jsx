@@ -18,7 +18,7 @@ const actions = [
     url: 'https://www.linkedin.com/in/micacabreradev/',
   },
   {
-    icon: <GitHubIcon fontSize="large" sx={{ color: 'black' }} />,
+    icon: <GitHubIcon fontSize="large" sx={{ color: 'orange' }} />,
     name: 'GitHub',
     url: 'https://github.com/MicaCabrera',
   },

@@ -19,13 +19,13 @@ export const Inicio = () => {
             fontWeight={700}
             textAlign="center"
           >
-            WHO AM I
+            Micaela Cabrera
           </Typography>
           <Typography
             variant="h6"
             color="textPrimary"
             fontFamily="Shadows Into Light"
-            fontSize={{ xs: 16, md: 24, lg: 25 }}
+            fontSize={{ xs: 20, md: 24, lg: 25 }}
             textAlign="right"
             mt={2}
             sx={{
@@ -42,7 +42,7 @@ export const Inicio = () => {
           <Typography
             variant="h6"
             color="textPrimary"
-            fontSize={{ xs: 18, md: 24 }}
+            fontSize={{ xs: 26, md: 30 }}
             fontFamily="Shadows Into Light"
             textAlign={{ xs: 'center', md: 'left' }}
             mt={{ xs: 2, md: 10 }}
@@ -55,11 +55,11 @@ export const Inicio = () => {
             variant="h6"
             color="textPrimary"
             fontFamily="Shadows Into Light"
-            fontSize={{ xs: 18, md: 24 }}
+            fontSize={{ xs: 26, md: 30 }}
             textAlign={{ xs: 'center', md: 'right' }}
             mt={{ xs: 0, md: 10 }}
           >
-            Micaela Cabrera
+            who am i
           </Typography>
         </Grid>
       </Grid>
